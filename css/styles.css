@@ -4228,7 +4228,7 @@ button.btn--pill {
   display: none;
 }
 
-.modal-popup__details {
+.modal-popup__details,.modal-popup__detailsGithug {
   background-color: rgba(0, 0, 0, 0.3);
   font-size: var(--text-sm);
   line-height: calc(var(--vspace-1_5) - 2px);
@@ -4241,7 +4241,14 @@ button.btn--pill {
   left: 4rem;
 }
 
+.modal-popup__detailsGithug {
+  position: absolute;
+  top: var(--vspace-1_25);
+  left:150px;
+}
+
 .modal-popup__details:hover,
+.modal-popup__detailsGithug:hover,
 .modal-popup__details:focus {
   background-color: var(--color-1);
   border-color: var(--color-1);
