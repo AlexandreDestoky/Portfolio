@@ -4232,7 +4232,7 @@ button.btn--pill {
   background-color: rgba(0, 0, 0, 0.3);
   font-size: var(--text-sm);
   line-height: calc(var(--vspace-1_5) - 2px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 3px solid rgba(255, 255, 255, 0.425);
   color: white;
   border-radius: var(--border-radius);
   padding: 0 1.4rem;
@@ -4244,7 +4244,7 @@ button.btn--pill {
 .modal-popup__detailsGithug {
   position: absolute;
   top: var(--vspace-1_25);
-  left:150px;
+  left:18rem;
 }
 
 .modal-popup__details:hover,
