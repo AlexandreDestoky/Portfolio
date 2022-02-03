@@ -1,7 +1,4 @@
 /* =================================================================== 
- * Ceevee Main Stylesheet
- * Template Ver. 2.0.0
- * 01-03-2021
  * ------------------------------------------------------------------
  *
  * TOC:
@@ -4013,9 +4010,25 @@ button.btn--pill {
 /* ------------------------------------------------------------------- 
  * ## resume block
  * ------------------------------------------------------------------- */
-.resume-block {
+.skills {
   margin-bottom: var(--vspace-1_75);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 2rem;
+  justify-items: flex-start ;
 }
+
+.resume-block div {
+  margin: 20px;
+}
+.skills div {
+  text-align: center;
+}
+.skills div:hover {
+transform: scale(1.5);
+transition: all 500ms;
+}
+
 
 .resume-block h4 {
   line-height: 1.08;
@@ -4145,6 +4158,7 @@ button.btn--pill {
   display: block;
   margin: 5px;
   height:300px;
+  width: 100%;
   -webkit-transition: all, 0.5s;
   transition: all, 0.5s;
 }
@@ -4624,14 +4638,15 @@ button.btn--pill {
  * ------------------------------------------------------------------- */
 .s-footer {
   background-color: var(--color-gray-18);
-  padding-top: var(--vspace-1);
-  padding-bottom: var(--vspace-3);
+  /* padding-top: var(--vspace-1); */
+  /* padding-bottom: var(--vspace-3); */
   color: rgba(255, 255, 255, 0.2);
   position: relative;
 }
 
 .s-footer .row {
   padding-top: var(--vspace-1);
+  padding-bottom: var(--vspace-1);
   border-top: 1px solid rgba(255, 255, 255, 0.03);
 }
 
@@ -4679,13 +4694,14 @@ button.btn--pill {
 /* ------------------------------------------------------------------- 
  * ## copyright
  * ------------------------------------------------------------------- */
-.ss-copyright {
+.ss-copyright, .ss-copyright a {
   z-index: 2;
   -ms-flex-order: -1;
   -webkit-box-ordinal-group: 0;
   order: -1;
   margin-right: auto;
   position: relative;
+  color: #272424;
 }
 
 .ss-copyright span {
